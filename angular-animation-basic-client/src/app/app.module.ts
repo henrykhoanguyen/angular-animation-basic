@@ -7,19 +7,31 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { MatToolbarModule } from '@angular/material';
+import {
+  MatToolbarModule,
+  MatMenuModule,
+  MatButtonModule,
+  MatIconModule
+} from '@angular/material';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingPageComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

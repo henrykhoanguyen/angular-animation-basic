@@ -1,6 +1,32 @@
-<mat-toolbar color="primary" role="heading">
+<mat-toolbar color="warm" role="heading">
   <span>
     Angular Animation Basic
   </span>
-  <fa-icon [icon]="faGithub" id="Github"> </fa-icon>
+  <div class="flex-spacer"></div>
+  <span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>
+        menu
+      </mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>list_alt</mat-icon>
+        <span>To-Do List</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>
+          miscellaneous_services
+        </mat-icon>
+        <span>Misc</span>
+      </button>
+    </mat-menu>
+  </span>
+  <span style="margin-left: 0.5em;">
+    <a href="https://github.com/henrykhoanguyen">
+      <fa-icon [icon]="faGithub" id="Github"></fa-icon>
+      Github
+    </a>
+  </span>
+
 </mat-toolbar>
