@@ -1,6 +1,8 @@
 <mat-toolbar color="warm" role="heading">
   <span>
-    Angular Animation Basic
+    <a routerLink="/" routerLinkActive="active">
+      Angular Animation Basic
+    </a>
   </span>
   <div class="flex-spacer"></div>
   <span>
@@ -10,7 +12,7 @@
       </mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="/todo" routerLinkActive="active">
         <mat-icon>list_alt</mat-icon>
         <span>To-Do List</span>
       </button>

@@ -3,8 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
 
-
-const routes: Routes = [];
+// TODO: check if route to navigate between pages works???
+const routes: Routes = [
+  { path: '', component: LandingPageComponent },
+  { path: 'todo', component: ToDoListComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
