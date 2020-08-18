@@ -1,10 +1,9 @@
-<section class="container">
-  <h1>
-    <span class="title">This is</span>
-    <span class="title">a long</span>
-    <span class="title">long title</span>
-  </h1>
 
-  <div class="button">restart</div>
-</section>
-<p>landing page works!</p>
+<div class="container" [@listAnimation]="items.length">
+  <button (click)="pushItem()">Add Item</button>
+  <button (click)="removeItem()">Remove Item</button>
+
+  <div id="list" *ngFor="let item of items">
+    {{ item }}
+  </div>
+</div>
